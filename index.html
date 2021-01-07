@@ -8,7 +8,6 @@
     <title>Smash - Bootstrap Business Template</title>
     
     <meta name="description" content="">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
@@ -995,18 +994,15 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     <div id="webchat"></div>
-    <script src="assets/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
     
     <script>
       WebChat.default.init({
         selector: "#webchat",
         initPayload: "/get_started",
         customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-        socketUrl: "http://104.198.26.96",
+        socketUrl: "https://mortgagekaro.com",
         socketPath: "/socket.io/",
-        profileAvatar: "syra.png",
-        openLauncherImage: "syra.png",
-        hideWhenNotConnected:false,
         title: "Syra",
         subtitle: "Digital Assistant for Tax Advice",
         params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
